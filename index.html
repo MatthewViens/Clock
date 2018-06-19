@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="icon.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Clock</title>
+</head>
+<body>
+  <div id="main">
+
+    <div id="clock-display">
+      <div id="analog">
+        <div class="clock-face">
+          <div class="hand hour"></div>
+          <div class="hand minute"></div>
+          <div class="hand second"></div>
+          <div class="mid"></div>
+        </div>
+      </div>
+      <div id="digital"></div>
+    </div>
+
+    <div id="alarm-display">
+      <div id="alarm-time">
+        <h1><input id="alarm-hours" placeholder="00" maxlength="2"></h1>
+        <h1>:<input id="alarm-minutes" placeholder="00" maxlength="2"></h1>
+        <h1>:<input id="alarm-seconds" placeholder="00" maxlength="2"></h1>
+      </div>
+      <div id="alarm-controls">
+        <div id="alarm-start-button">Start</div>
+        <div id="alarm-cancel-button">Cancel</div>
+      </div>
+    </div>
+
+    <div id="timer-display">
+      <h1 id="timer-time"></h1>
+      <div id="timer-controls">
+        <div id='timer-start-button'>Start</div>
+        <div id='timer-reset-button'>Reset</div>
+      </div>
+    </div>
+
+  </div>
+  <div id="menu">
+    <i class="icon-clock active" id="clock-button"></i>
+    <i class="icon-alarm" id="alarm-button"></i>
+    <i class="icon-stopwatch" id="timer-button"></i>
+  </div>
+  <script type="text/javascript" src="clock.js"></script>
+</body>
+</html>
