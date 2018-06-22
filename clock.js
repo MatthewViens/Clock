@@ -277,6 +277,7 @@ alarmCancelButton.addEventListener('click', () => {
   alarmSeconds.disabled = false;
   alarmStartButton.textContent = 'Start';
   clearInterval(blinkTimer);
+  alarmTime.style.visibility = 'visible';
 });
 
 /* ===============
